@@ -11,7 +11,6 @@
 
 <body data-bs-theme="dark">
     <header>
-
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Innovopak</a>
@@ -43,87 +42,115 @@
     <main>
         <section>
             <div class="container-fluid">
-                <div id="factory-Carrousel" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <!-- TODO -->
-
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="moulds">
+                            <img src="..." class="d-block w-100" alt="moulds">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Innovotools mould deign</h5>
-                                <p>making moulds since ----</p>
+                                <h5>Innovotools moulding</h5>
+                                <p>making moulds since 1999</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Caps">
+                            <img src="..." class="d-block w-100" alt="caps">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Caps</h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Bottles">
+                            <img src="..." class="d-block w-100" alt="bottles">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Bottles</h5>
                                 <p></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Preforms">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Preforms</h5>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Custom designs">
+                            <img src="..." class="d-block w-100" alt="custom designs">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Custom designs</h5>
                                 <p></p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
-                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <hr>
         <section id="products">
             <div class="container-fluid product-grid">
                 <div class="product-item">
-                    <!-- TODO -->
+                    <img class="product-image" src="" alt="">
+                    <p class="product-description"></p>
+                    <p class="product-id"></p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-                    <span class="mb-3 mb-md-0 text-muted">© 2023 Innovopak, Inc</span>
-                </div>
 
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
-                </ul>
-            </footer>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Innovopak, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-block">
+                <li class="ms-3">
+                    <a href="mailto:info@innovopak.com" class="text-decoration-none text-body">
+                        <img src="img/email.svg" width="24" alt="">
+                        info@innovopak.com
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="tel:+1 (905) 364-3161" class="text-decoration-none text-body">
+                        <img src="img/phone.svg" width="24" alt="">
+                        +1 (905) 364-3161
+                    </a>
+
+                </li>
+                <li class="ms-3">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#googleMapsModal">
+                        <img src="img/address.svg" width="24" alt="">
+                        500 Barmac Dr #1,<br> North York, ON M9L 2W6
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="googleMapsModal" tabindex="-1" aria-labelledby="googleMapsModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="googleMapsModalLabel">Maps Address</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.494046190994!2d-79.55049720000002!3d43.762602400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3004dd55a70f%3A0x29db54a911269f06!2s500%20Barmac%20Dr%20%231%2C%20North%20York%2C%20ON%20M9L%202X8!5e0!3m2!1ses-419!2sca!4v1702257402062!5m2!1ses-419!2sca"
+                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <a type="button" class="btn btn-primary" target="_blank" href="https://www.google.com/maps/place/500+Barmac+Dr+%231,+North+York,+ON+M9L+2X8/@43.762602,-79.550497,16z/data=!4m5!3m4!1s0x882b3004dd55a70f:0x29db54a911269f06!8m2!3d43.7626024!4d-79.5504972">Google Maps</a>
+
+                                    <a type="button" class="btn btn-primary" target="_blank" href="https://ul.waze.com/ul?place=ChIJEW2Q6gQwK4gR_Y036YK2QV0&ll=43.76306880%2C-79.55054450&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">Waze</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
